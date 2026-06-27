@@ -1,0 +1,111 @@
+/* Tipografías */
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+/* font-family: "Comic Neue", cursive; */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* estilos generales */ 
+
+body {
+    font-family: "Comic Neue", cursive;
+}
+/* estilo de header */
+header, footer {
+    background-color: rgb(134, 96, 170);
+    color: blueviolet;
+    background-image: url("../img/huellitas.webp");
+}
+header {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+header ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+ 
+a {
+    text-decoration: none;
+    color: black;
+}
+.cardsIndex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+.cardsIndex img {
+    border-radius: 30px;
+}
+
+/* ruta de especificidad */
+
+header nav ul li {
+    list-style-type: none;
+    margin: 0px 5 px;    
+}
+header nav ul li a {
+    text-decoration: none;
+    color:darkmagenta;  
+    font-size: 1.5rem;
+}
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3{
+    font-size: 1rem;
+}
+/* estilos de main */
+
+main {
+    background-color: rgb(216, 191, 203);
+}
+.boxmodel div {
+    width: 200px;
+    height: 200px;
+}
+.margin {
+    margin: 15px;
+}
+.padding {
+    padding: 30px;
+}
+.border {
+    border: 5px hotpink solid;
+    border-radius: 10px;
+}
+.padreFlex {
+    display: flex;
+    /* define la dirección de los elementos */
+    flex-direction: row-reverse;
+}
+.flexItem {
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+}
+.buttonFooter {
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 15px;
+    width: 50%x;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
