@@ -24,8 +24,10 @@ img {
 /* estilo de header */
 header, footer {
     display: flex;
+    flex-direction: column;
     background-color: #C9799B;
     color: black;
+    background-image: url("../img/fondo.png");
 }
 header {
     font-size: 2rem;
@@ -38,8 +40,10 @@ header nav {
 }
 header nav ul {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center; 
+
 }
  
 /* ruta de especificidad */
@@ -72,8 +76,9 @@ a {
 }
 .cardsIndex {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
 }
 .cardsIndex img {
     border-radius: 30px;
@@ -83,40 +88,43 @@ a {
 main {
     background-color: #FFF5F8;
 }
-.boxmodel div {
+.productos-servicios {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+    "img1"
+    "img2"
+    "img3"
+    "img4";
     width: 200px;
     height: 200px;
+    padding: 2rem;
+    gap: 1.5rem;
+    align-items: center;
 }
-.margin {
-    margin: 15px;
+.imagen1 {
+    grid-area: img1;
 }
-.padding {
-    padding: 30px;
+.imagen2 {
+    grid-area: img2;
 }
-.border {
-    border: 5px hotpink solid;
-    border-radius: 10px;
+.imagen3{
+    grid-area: img3;
 }
-.padreFlex {
-    display: flex;
-    /* define la dirección de los elementos */
-    flex-direction: row-reverse;
+.imagen4 {
+    grid-area: img4;
 }
-.flexItem {
-    width: 100px;
-    height: 100px;
-    background-color: brown;
-}
+
 footer {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
     align-items: center;
     gap: 1.5rem;
     padding: 1rem;
 }
 footer ul {
-    display: flex;
     justify-content: space-evenly;
-    align-items: center;
     width:25%;
     margin-top: 1rem;
 }
@@ -133,6 +141,7 @@ footer ul li {
     border-radius: 15px;
     width: 50%x;
 }
+
 form {
     display: flex;
     flex-direction: column;
