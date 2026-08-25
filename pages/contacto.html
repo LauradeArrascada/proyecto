@@ -24,23 +24,53 @@
             </ul>
         </nav>
     </header>
-    <!-- titulo principal del sitio -->
-    <h1>Huellitas</h1>
-     <!-- Contenido específico y principal del archivo-->
-    <main>
-        <!-- separa en temas el contenido especifico de un archivo-->
-        <section>
-            <!-- encierra estructuras de codigo que tienden a repetirse en un archivo-->
-            <article>
-                <form>
-                    
-                </form>
-            </article>
-        </section>
-    </main>
-    <!-- contenido del pie de página -->
-    <footer>
+<main class="contacto">
+    <section class="formulario-contacto">
+        <h1>Contactanos</h1>
 
-    </footer>
+        <p>¿Tenés alguna consulta? Completá el formulario y nos pondremos en contacto con vos.</p>
+
+        <form action="#" method="post">
+
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono">
+
+            <label for="asunto">Asunto</label>
+            <input type="text" id="asunto" name="asunto">
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+            <button type="submit">Enviar mensaje 🐾</button>
+
+        </form>
+    </section>
+</main>
+ <footer>
+        <p>Huellitas Pet Shop</p>
+        <ul>
+            <li><a href="../index.html"></a></li>
+            <li><a href="./productos.html">Productos</a></li>
+            <li><a href="./servicios.html">Servicios</a></li>
+            <li><a href="./quienessomos.html">Quienes somos</a></li>
+            <li><a href="./preguntasfrecuentes.html">Preguntas Frecuentes</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+            <li><a href=""><img src="../img/instagram.png" alt="logo Instagram"></a></li>
+            <li><a href=""><img src="../img/facebook.png" alt="logo Facebook"></a></li>
+            <li><a href=""><img src="../img/logo-x.png" alt="logo X"></a></li>
+            <li><a href=""><img src="../img/whatsapp.png" alt="logo Whatsapp"></a></li>    
+        </ul>
+            <form action="">
+                <label for="mailnewsletter">Suscribite al newsletter para recibir mas novedades</label>
+                <input type="email" name="mailnewsletter" id="mailnewsletter" placeholder="Dejanos tu email">
+                <input type="submit" value="Suscribirse" class="buttonFooter">
+            </form>
+</footer>
 </body>
 </html>
