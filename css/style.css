@@ -16,6 +16,10 @@ body {
 img {
     max-width: 100%;
     border-radius: 30px;
+    transition: all 1s;
+}
+img:hover {
+    transform: scale(1.1);
 }
 .logo {
     width: 100px;
@@ -45,15 +49,15 @@ header nav ul {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center; 
-
 }
- 
-/* ruta de especificidad */
-
 header nav ul li {
     color: #4A4036;
     list-style-type: none;
-    margin: 0 5px;    
+    margin: 0 5px; 
+    transition: all 1s;   
+}
+header nav ul li:hover {
+    transform: scale(1.1);
 }
 header nav ul li a {
     text-decoration: none;
@@ -334,6 +338,7 @@ form {
 
     header nav ul li a {
         font-size: 1.1rem;
+        font-weight: bold;
     }
 
     .productos-servicios {
