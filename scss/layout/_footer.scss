@@ -50,7 +50,7 @@ form {
         flex-direction: row;
         padding: 15px 20px;
         nav {
-            width: 80%;
+            width: 100%;
                 ul {
                     @include flex(row, space-between, center, 5px); 
                     a {

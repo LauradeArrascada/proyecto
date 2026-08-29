@@ -7,7 +7,7 @@ header {
     font-size: 2rem;
     @include flex(column, space-between, center, null);
     nav {
-        width: 100%;
+        width: 50%;
         font-weight: bold;
     
             ul {
