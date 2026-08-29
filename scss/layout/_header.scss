@@ -1,0 +1,38 @@
+@use "../utilities/variables" as *;
+@use "../utilities/extend" as *;
+@use "../utilities/mixin" as *;
+@use "../base/animaciones" as *;
+
+
+header {
+    @extend %head-foot;
+    font-size: 2rem;
+    @include flex(column, space-between, center, null);
+    nav {
+    width: 50%;
+    
+    ul {
+    @include flex(column, space-evenly, center, null);
+
+    li {
+        color: black;
+        list-style-type: none;
+        margin: 0 5px; 
+        transition: all 1s;   
+
+    &:hover {
+        transform: $transformacion;
+    } 
+    a {
+        text-decoration: none;
+        color:black;  
+        font-size: 1.3rem;
+        justify-content: space-between;
+}
+}
+    
+}
+
+}
+
+}

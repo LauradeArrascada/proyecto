@@ -1,0 +1,10 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixin" as *;
+
+
+%head-foot {
+    display: flex;
+    background-color: $rosaoscuro;
+    color: $rosaclaro;
+    background-image: $fondo;
+}

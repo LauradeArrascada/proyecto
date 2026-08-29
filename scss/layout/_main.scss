@@ -1,0 +1,166 @@
+@use "../utilities/variables" as *;
+@use "../utilities/extend" as *;
+@use "../utilities/mixin" as *;
+
+main {
+    background: $gradiente;  
+}
+h1 {
+    @include flex(row, null, null, null);
+    font-size: 2.5rem;
+    }
+h2 {
+    font-size: 1.5rem;
+    }
+h3{
+    font-size: 1rem;
+    text-align: center;
+    }  
+.cardsIndex {
+    @include flex(column, space-evenly, center, null);
+    }
+.quienes-somos {
+    min-height: 70vh;
+    @include flex(null, center, center, null);
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.contenido {
+    max-width: 700px;
+}
+
+.contenido h1 {
+    margin-bottom: 25px;
+}
+
+.contenido p {
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+.preguntas {
+    min-height: 75vh;
+    padding: 50px 20px;
+    background-color: $fondosclaros;
+}
+
+.faq {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: $fondosclaros;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: $sombra;
+}
+
+.faq h1 {
+    text-align: center;
+    color: $rosaoscuro;
+    margin-bottom: 35px;
+}
+
+.pregunta {
+    margin-bottom: 25px;
+}
+
+.pregunta h2 {
+    color: $rosaoscuro;
+    font-size: 1.2rem;
+}
+
+.pregunta p {
+    color: $colortextos;
+    line-height: 1.6;
+}
+.productos-servicios {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+    "img1"
+    "img2"
+    "img3"
+    "img4";
+    padding: 2rem;
+    gap: 1.5rem;
+    align-items: center;
+}
+.imagen1 {
+    grid-area: img1;
+}
+.imagen2 {
+    grid-area: img2;
+}
+.imagen3{
+    grid-area: img3;
+}
+.imagen4 {
+    grid-area: img4;
+}
+.contacto {
+    min-height: 75vh;
+    padding: 50px 20px;
+    background-color: $fondosclaros;
+}
+
+.formulario-contacto {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: $fondosclaros;
+    border-radius: 25px;
+    box-shadow: $sombra;
+}
+
+.formulario-contacto h1 {
+    text-align: center;
+    color: $rosaoscuro;
+    margin-bottom: 15px;
+}
+
+.formulario-contacto > p {
+    text-align: center;
+    color: $colortextos;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.formulario-contacto form {
+    @include flex(column, null, null, null);
+}
+
+.formulario-contacto label {
+    margin-bottom: 7px;
+    color: $colortextos;
+    font-weight: bold;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid $rosaclaro;
+    border-radius: 10px;
+    font-family: inherit;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+    outline: none;
+    border-color: $rosaoscuro;
+}
+
+.formulario-contacto button {
+    padding: 13px;
+    border: none;
+    border-radius: 10px;
+    background-color: $rosaoscuro;
+    color: $fondosclaros;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.formulario-contacto button:hover {
+    background-color: $rosaoscuro;
+}

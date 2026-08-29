@@ -1,0 +1,17 @@
+@use "../base/fuentes" as *;
+
+$fuente: "Comic Neue", cursive;
+
+//variables color
+$rosaclaro: #f0c6d7;
+$rosaoscuro: #e75891;
+$fondosclaros: #fff5f8;
+$colortextos: #555;
+$gradiente: linear-gradient(#f0c6d7, #e75891);
+$sombra: 0 8px 25px rgba(0, 0, 0, 0.10);
+
+//variable img de fondo
+$fondo: url("../img/fondo.png");
+
+//variable transformacion
+$transformacion: scale(1.1);

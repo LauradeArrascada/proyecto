@@ -1,0 +1,111 @@
+@use "../utilities/variables" as *;
+
+
+body {
+    font-family: $fuente;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+img {
+    max-width: 100%;
+    border-radius: 30px;
+    transition: all 1s;
+
+    &:hover {
+    transform: $transformacion;
+}
+}
+.logo {
+    width: 100px;
+    margin-right: auto;
+    border: 2px solid #C9799B;
+    border-radius: 20px;
+}
+@media (min-width: 768px) {
+
+    header {
+        flex-direction: row;
+        padding: 15px 20px;
+    }
+
+    header nav {
+        width: 80%;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
+    }
+
+    header nav ul li a {
+        font-size: 0.95rem;
+        white-space: nowrap;
+    }
+
+    .cardsIndex {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .productos-servicios {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:
+        "img1 img2"
+        "img3 img4";
+    }
+
+    .tarjeta-quienes {
+        max-width: 700px;
+    }
+
+    .faq {
+        padding: 50px;
+    }
+
+    .formulario-contacto {
+        padding: 50px;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+@media (min-width: 1024px) {
+
+    header {
+        padding: 20px 40px;
+    }
+
+    header nav {
+        width: 75%;
+    }
+
+    header nav ul {
+        gap: 15px;
+    }
+
+    header nav ul li a {
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+
+    .productos-servicios {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "img1 img2 img3 img4";
+    }
+
+    .formulario-contacto {
+        max-width: 650px;
+    }
+}
+
+
