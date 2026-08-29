@@ -28,15 +28,15 @@ h3{
 
 .contenido {
     max-width: 700px;
-}
 
-.contenido h1 {
-    margin-bottom: 25px;
-}
+    h1 {
+        margin-bottom: 25px;
+    }
 
-.contenido p {
-    line-height: 1.7;
-    margin-bottom: 15px;
+    p {
+        line-height: 1.7;
+        margin-bottom: 15px;
+    }
 }
 .preguntas {
     min-height: 75vh;
@@ -51,27 +51,26 @@ h3{
     padding: 40px;
     border-radius: 25px;
     box-shadow: $sombra;
-}
 
-.faq h1 {
+    h1 {
     text-align: center;
     color: $rosaoscuro;
     margin-bottom: 35px;
 }
+}
 
 .pregunta {
     margin-bottom: 25px;
-}
-
-.pregunta h2 {
+    h2 {
     color: $rosaoscuro;
-    font-size: 1.2rem;
+    font-size: 1.2rem;  
 }
-
-.pregunta p {
+    p {
     color: $colortextos;
     line-height: 1.6;
 }
+}
+
 .productos-servicios {
     display: grid;
     grid-template-columns: 1fr;
@@ -102,7 +101,6 @@ h3{
     padding: 50px 20px;
     background-color: $fondosclaros;
 }
-
 .formulario-contacto {
     max-width: 650px;
     margin: 0 auto;
@@ -110,57 +108,56 @@ h3{
     background-color: $fondosclaros;
     border-radius: 25px;
     box-shadow: $sombra;
-}
 
-.formulario-contacto h1 {
-    text-align: center;
-    color: $rosaoscuro;
-    margin-bottom: 15px;
-}
+    h1 {
+        text-align: center;
+        color: $rosaoscuro;
+        margin-bottom: 15px;
+    }
 
-.formulario-contacto > p {
-    text-align: center;
-    color: $colortextos;
-    margin-bottom: 30px;
-    line-height: 1.6;
-}
+    > p {
+        text-align: center;
+        color: $colortextos;
+        margin-bottom: 30px;
+        line-height: 1.6;
+    }
 
-.formulario-contacto form {
-    @include flex(column, null, null, null);
-}
+    form {
+        @include flex(column, null, null, null);
+    }
 
-.formulario-contacto label {
-    margin-bottom: 7px;
-    color: $colortextos;
-    font-weight: bold;
-}
+    label {
+        margin-bottom: 7px;
+        color: $colortextos;
+        font-weight: bold;
+    }
 
-.formulario-contacto input,
-.formulario-contacto textarea {
-    padding: 12px;
-    margin-bottom: 20px;
-    border: 1px solid $rosaclaro;
-    border-radius: 10px;
-    font-family: inherit;
-}
+    input,
+    textarea {
+        padding: 12px;
+        margin-bottom: 20px;
+        border: 1px solid $rosaclaro;
+        border-radius: 10px;
+        font-family: inherit;
 
-.formulario-contacto input:focus,
-.formulario-contacto textarea:focus {
-    outline: none;
-    border-color: $rosaoscuro;
-}
+        &:focus {
+            outline: none;
+            border-color: $rosaoscuro;
+        }
+    }
 
-.formulario-contacto button {
-    padding: 13px;
-    border: none;
-    border-radius: 10px;
-    background-color: $rosaoscuro;
-    color: $fondosclaros;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-}
+    button {
+        padding: 13px;
+        border: none;
+        border-radius: 10px;
+        background-color: $rosaoscuro;
+        color: $fondosclaros;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
 
-.formulario-contacto button:hover {
-    background-color: $rosaoscuro;
+        &:hover {
+            background-color: $rosaclaro;
+        }
+    }
 }
