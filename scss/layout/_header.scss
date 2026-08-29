@@ -1,8 +1,6 @@
 @use "../utilities/variables" as *;
 @use "../utilities/extend" as *;
 @use "../utilities/mixin" as *;
-@use "../base/animaciones" as *;
-
 
 header {
     @extend %head-foot;
