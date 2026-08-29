@@ -109,7 +109,8 @@ header {
   align-items: center;
 }
 header nav {
-  width: 50%;
+  width: 100%;
+  font-weight: bold;
 }
 header nav ul {
   display: flex;

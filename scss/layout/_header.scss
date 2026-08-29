@@ -7,26 +7,27 @@ header {
     font-size: 2rem;
     @include flex(column, space-between, center, null);
     nav {
-    width: 50%;
+        width: 100%;
+        font-weight: bold;
     
-    ul {
-    @include flex(column, space-evenly, center, null);
+            ul {
+                @include flex(column, space-evenly, center, null);
 
-    li {
-        color: black;
-        list-style-type: none;
-        margin: 0 5px; 
-        transition: all 1s;   
+                li {
+                    color: black;
+                    list-style-type: none;
+                    margin: 0 5px; 
+                    transition: all 1s;   
 
-    &:hover {
-        transform: $transformacion;
-    } 
-    a {
-        text-decoration: none;
-        color:black;  
-        font-size: 1.3rem;
-        justify-content: space-between;
-}
+                &:hover {
+                    transform: $transformacion;
+                } 
+                    a {
+                        text-decoration: none;
+                        color:black;  
+                        font-size: 1.3rem;
+                        justify-content: space-between;
+                    }
 }
     
 }
