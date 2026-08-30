@@ -1,7 +1,6 @@
 @use "../utilities/variables" as *;
 @use "../utilities/extend" as *;
 @use "../utilities/mixin" as *;
-
 header {
     @extend %head-foot;
     font-size: 2rem;
@@ -9,16 +8,13 @@ header {
     nav {
         width: 50%;
         font-weight: bold;
-    
             ul {
                 @include flex(column, space-evenly, center, null);
-
                 li {
                     color: black;
                     list-style-type: none;
                     margin: 0 5px; 
                     transition: all 1s;   
-
                 &:hover {
                     transform: $transformacion;
                 } 
@@ -28,10 +24,8 @@ header {
                         font-size: 1.3rem;
                         justify-content: space-between;
                     }
-}
+                }
     
-}
-
-}
-
+            }
+    }
 }

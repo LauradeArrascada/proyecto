@@ -102,15 +102,15 @@ h3{
     background-color: $fondosclaros;
 }
 .formulario-contacto {
-    max-width: 650px;
-    margin: 0 auto;
-    padding: 40px;
+    width: 100%;
+    box-sizing: border-box;
     background-color: $fondosclaros;
     border-radius: 25px;
     box-shadow: $sombra;
 
     h1 {
         text-align: center;
+        box-sizing: border-box;
         color: $rosaoscuro;
         margin-bottom: 15px;
     }
@@ -134,18 +134,19 @@ h3{
 
     input,
     textarea {
-        padding: 12px;
-        margin-bottom: 20px;
-        border: 1px solid $rosaclaro;
-        border-radius: 10px;
-        font-family: inherit;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid $rosaclaro;
+    border-radius: 10px;
+    font-family: inherit;
 
-        &:focus {
-            outline: none;
-            border-color: $rosaoscuro;
-        }
+    &:focus {
+        outline: none;
+        border-color: $rosaoscuro;
     }
-
+}
     button {
         padding: 13px;
         border: none;
