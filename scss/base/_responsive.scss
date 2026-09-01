@@ -6,7 +6,7 @@
         padding: 15px 20px;
 
         nav {
-            width: 100%;
+            width: 80%;
 
             ul {
                 @include flex(row, space-between, center, 5px);
@@ -38,10 +38,6 @@
         max-width: 700px;
     }
 
-    .faq {
-        padding: 50px;
-    }
-
     .formulario-contacto {
         padding: 50px;
         margin: 0 auto;
@@ -71,14 +67,12 @@
             }
         }
     }
-
     .productos-servicios {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 1fr;
         grid-template-areas:
             "img1 img2 img3 img4";
     }
-
     .formulario-contacto {
         max-width: 650px;
         margin: 0 auto;

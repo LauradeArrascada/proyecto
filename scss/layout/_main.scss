@@ -44,33 +44,6 @@ h3{
     background-color: $fondosclaros;
 }
 
-.faq {
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: $fondosclaros;
-    padding: 40px;
-    border-radius: 25px;
-    box-shadow: $sombra;
-
-    h1 {
-    text-align: center;
-    color: $rosaoscuro;
-    margin-bottom: 35px;
-}
-}
-
-.pregunta {
-    margin-bottom: 25px;
-    h2 {
-    color: $rosaoscuro;
-    font-size: 1.2rem;  
-}
-    p {
-    color: $colortextos;
-    line-height: 1.6;
-}
-}
-
 .productos-servicios {
     display: grid;
     grid-template-columns: 1fr;
