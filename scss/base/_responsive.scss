@@ -20,12 +20,10 @@
             }
         }
     }
-
     .cardsIndex {
         flex-direction: row;
         flex-wrap: wrap;
     }
-
     .productos-servicios {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, auto);
@@ -33,16 +31,13 @@
             "img1 img2"
             "img3 img4";
     }
-
     .tarjeta-quienes {
         max-width: 700px;
     }
-
     .formulario-contacto {
-        padding: 50px;
+        padding: 35px;
         margin: 0 auto;
     }
-
     footer {
         @include flex(row, space-around, center, null);
     }

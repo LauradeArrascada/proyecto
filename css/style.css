@@ -1,6 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap");
 body {
   font-family: "Comic Neue", cursive;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Roboto Serif", serif;
 }
 
 footer, header {
@@ -229,6 +235,26 @@ footer ul li a {
   color: black;
   font-size: 1rem;
   justify-content: space-between;
+}
+footer .redes-sociales {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 15px;
+}
+footer .footer-nav {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-nav a {
+  text-decoration: none;
+  color: black;
 }
 footer .buttonFooter {
   background-color: black;

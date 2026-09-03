@@ -22,7 +22,22 @@ footer {
 }
 }
 }
-
+.redes-sociales {
+    @include flex(row, space-evenly, center, 10px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+}
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+        a {
+        text-decoration: none;
+        color: black;
+    }
+}
 .buttonFooter {
     background-color: black;
     border: none;
