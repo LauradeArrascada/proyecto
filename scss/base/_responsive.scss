@@ -42,7 +42,6 @@
         @include flex(row, space-around, center, null);
     }
 }
-
 @media (min-width: 1024px) {
     header {
         padding: 20px 40px;
