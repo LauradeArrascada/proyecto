@@ -74,9 +74,9 @@ h1 {
     h1 {
         text-align: center;
         box-sizing: border-box;
-        color: #e75891;
+        color: $rosaoscuro;
         margin-bottom: 15px;
-       
+    } 
     > p {
         text-align: center;
         color: $colortextos;
@@ -84,7 +84,7 @@ h1 {
         line-height: 1.6;
         
     }
-    }
+    
     form {
         @include flex(column, null, null, null);
     }
